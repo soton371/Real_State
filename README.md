@@ -15,8 +15,11 @@
 #6. check run: python3 manage.py migrate after that python3 manage.py runserver
 
 #7. inside the configuration settings.py real state folder:
+
 from pathlib import Path
+
 import os
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -26,13 +29,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework'
 ]
+
 TIME_ZONE = 'Asia/Dhaka'
+
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 #8. inside the configuration urls.py real state folder:
+
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
