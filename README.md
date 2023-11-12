@@ -53,3 +53,18 @@ urlpatterns = [
 
 
 #9. super user create: python3 manage.py createsuperuser
+
+
+##################### REGISTRATION #######################
+
+#1. To create app: python3 manage.py startapp accounts
+
+#2. create serializers.py inside accounts folder
+
+#3. modify views.py inside accounts folder
+
+#4. create urls.py inside accounts folder
+
+#5. define new accounts urls.py inside RealState>urls.py
+
+#6. run server: python3 manage.py runserver
